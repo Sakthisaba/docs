@@ -228,7 +228,7 @@ $ curl -i {% data variables.product.api_url_pre %}/repos/twbs/bootstrap
 ```
 
 In the same way, we can [view repositories for the authenticated user][user repos api]:
-
+Let's add the `-H` flag to send custom headers to server.
 ```shell
 $ curl -i -H "Authorization: token {% ifversion fpt or ghes > 3.1 or ghae or ghec %}ghp_16C7e42F292c6912E7710c838347Ae178B4a{% else %}5199831f4dd3b79e7c5b7e0ebe75d67aa66e79d4{% endif %}" \
     {% data variables.product.api_url_pre %}/user/repos
